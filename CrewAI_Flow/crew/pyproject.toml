@@ -1,0 +1,22 @@
+[project]
+name = "crew"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "hunain3199", email = "muhammadhunain3199@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "crewai>=0.120.1",
+    "litellm>=1.68.0",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+flow_1 = "crew.flow_1:main"
+flow_2 = "crew.flow_2:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
